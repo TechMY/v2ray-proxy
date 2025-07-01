@@ -7,7 +7,7 @@ app.use('/', createProxyMiddleware({
   target: 'https://true.mmpctech.xyz', // ✅ DO VPS IP
   changeOrigin: true,
   ws: true,
-  secure: false,  // for self-signed or V2Ray TLS cert
+  secure: true,  // for self-signed or V2Ray TLS cert
   xfwd: true,
 }));
 
